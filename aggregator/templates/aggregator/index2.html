@@ -1,0 +1,11 @@
+{% extends 'aggregator/base.html' %}
+
+{%block body%}
+
+    <ul>
+        {%for content in object_list%}
+            <li>{{content.contentTitle}}</li>
+        {% endfor %}
+    </ul>
+
+{%endblock%}

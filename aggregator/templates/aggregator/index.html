@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% load staticfiles %}
+    <head>
+        <title>Make impact</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+
+
+
+  <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+  </style>
+
+
+ <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Make an Impact</h3>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Learning Begins Here</h1>
+            <p class="lead">The internet's best resources under one roof. </br> Save time searching and spend it on learning. </p>
+          
+
+          <form action="/Website/make_an_impact/chapter.html" method="POST">
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="sel1">Board</label>
+                    <select class="form-control" id="sel1">
+                      <option>CBSE</option>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="sel2">Grade</label>
+                    <select class="form-control" id="sel2">
+                      <option>5th</option>
+                      <option>6th</option>
+                      <option>7th</option>
+                      <option>8th</option>
+                    </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-4">
+                  <label for="sel2">Subject</label>
+                    <select class="form-control" id="sel2">
+                      <option>Science</option>
+                      <option>Mathematics</option>
+                      </select>
+                </div>
+              </div>
+
+            </form>
+
+      <div class="control-group">
+        <div class="go">
+          <button type="button" class="btn btn-md btn-default">Go
+          </button>
+        </div> <!--HALP: Dont know how to add vertical space above the Go Button-->
+      <div><!--go--> 
+
+        </div> <!--inner cover-->
+
+        </div> <!--cover-container-->
+
+      </div> <!--site-wrapper-inner-->
+
+    </div> <!--site-wrapper-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./files/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./files/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>
