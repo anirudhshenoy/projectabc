@@ -57,7 +57,7 @@
             <p class="lead">The internet's best resources under one roof. </br> Save time searching and spend it on learning. </p>
           
 
-          <form action="/Website/make_an_impact/chapter.html" method="POST">
+          <form action="chapter/" method="POST">{% csrf_token %}
               <div class="form-group">
                 <div class="col-sm-4">
                   <label for="sel1">Board</label>
@@ -87,14 +87,15 @@
                 </div>
               </div>
 
+              <div class="control-group">
+                <div class="go">
+                  <button type="submit" class="btn btn-md btn-default">Go
+                  </button>
+                </div> <!--HALP: Dont know how to add vertical space above the Go Button-->
+              </div>
             </form>
 
-      <div class="control-group">
-        <div class="go">
-          <button type="button" class="btn btn-md btn-default">Go
-          </button>
-        </div> <!--HALP: Dont know how to add vertical space above the Go Button-->
-      <div><!--go--> 
+      <!--go-->
 
         </div> <!--inner cover-->
 
