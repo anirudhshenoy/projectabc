@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ffa9736-d1fa-4ba4-b64b-a68a5442c50e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aggregator/templates/aggregator/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aggregator/templates/aggregator/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aggregator/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aggregator/templates/aggregator/index.html" afterPath="$PROJECT_DIR$/aggregator/templates/aggregator/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectabc/settings.py" afterPath="$PROJECT_DIR$/projectabc/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectabc/urls.py" afterPath="$PROJECT_DIR$/projectabc/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projectabc/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="117" column="40" lean-forward="true" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
+            <state relative-caret-position="451">
+              <caret line="110" column="15" lean-forward="true" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -65,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aggregator/templates/aggregator/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            <state relative-caret-position="693">
+              <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -140,8 +135,8 @@
         <option value="$PROJECT_DIR$/aggregator/templates/aggregator/index2.html" />
         <option value="$PROJECT_DIR$/aggregator/views.py" />
         <option value="$PROJECT_DIR$/aggregator/urls.py" />
-        <option value="$PROJECT_DIR$/aggregator/templates/aggregator/index.html" />
         <option value="$PROJECT_DIR$/projectabc/settings.py" />
+        <option value="$PROJECT_DIR$/aggregator/templates/aggregator/index.html" />
       </list>
     </option>
   </component>
@@ -482,14 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aggregator/templates/aggregator/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projectabc/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -502,8 +489,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projectabc/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="117" column="40" lean-forward="true" selection-start-line="117" selection-start-column="40" selection-end-line="117" selection-end-column="40" />
+        <state relative-caret-position="451">
+          <caret line="110" column="15" lean-forward="true" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aggregator/templates/aggregator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
           <folding />
         </state>
       </provider>
