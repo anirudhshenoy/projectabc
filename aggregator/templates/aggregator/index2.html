@@ -1,11 +1,47 @@
+
 {% extends 'aggregator/base.html' %}
 
-{%block body%}
+{% block body %}
+<div class="albums-container container-fluid">
 
-    <ul>
-        {%for content in object_list%}
-            <li>{{content.contentTitle}}</li>
-        {% endfor %}
-    </ul>
+    <!-- Albums -->
+    <div class="row">
+        <div class="col-sm-12">
 
-{%endblock%}
+        </div>
+
+            {% for content in object_list %}
+                <div class="col-sm-4 col-lg-2">
+                    <div class="thumbnail">
+
+                            <img src="https://s-media-cache-ak0.pinimg.com/236x/87/f0/5e/87f05e37e60f664610384df36ba79c34.jpg" class="img-responsive">
+
+                        <div class="caption">
+                            <h2>{{ content.chapterNumber }}</h2>
+                            <h4>{{ content.contentTitle }}</h4>
+
+                            <!-- View Details -->
+
+                            <!-- Delete Album -->
+                            <form action="/next/" method="post" style="display: inline;">
+                                {% csrf_token %}
+                                <input type="hidden" name="album_id" value="{{ content.contentTitle }}" />
+                                <button type="submit" class="btn btn-default btn-sm">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </form>
+
+                            <!-- Favorite Album -->
+
+                                <span class="glyphicon glyphicon-star {% if album.is_favorite %}active{% endif %}"></span>
+
+
+                        </div>
+                    </div>
+                </div>
+                {% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}
+            {% endfor %}
+        
+    </div>
+    </div>
+{% endblock %}
