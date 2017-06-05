@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class content (models.Model):
+class chapterDetail (models.Model):
 
     GRADE_CHOICES = (
         ('5th', '5th'),
@@ -27,8 +27,21 @@ class content (models.Model):
         default='Science',
     )
 
+    chapterTitle = models.CharField(max_length=300, default='Title')
+    chapterDescription = models.TextField(max_length=10000)
+    chapterNumber = models.CharField(max_length=2, default='NA')
+
+    def __str__(self):
+        return self.grade + '-' + self.subject + '-' + self.chapterTitle
+
+
+class content (models.Model):
+
+    chapter = models.ForeignKey(chapterDetail, on_delete=models.CASCADE, default=1)
+
+
     CONTENT_TYPE_CHOICES = (
-        ('Video','Video'),
+        ('Video', 'Video'),
         ('Article', 'Article'),
         ('Other', 'Other'),
     )
@@ -37,11 +50,12 @@ class content (models.Model):
         choices=CONTENT_TYPE_CHOICES,
         default='Video',
     )
-    chapterNumber = models.CharField(max_length=2)
+
     contentLink = models.CharField(max_length=1000)
-    contentTitle = models.CharField(max_length=1000, default="NA TITLE")
+    contentTitle = models.CharField(max_length=1000)
     longDescription = models.TextField(max_length=10000)
     shortDescription = models.TextField(max_length=10000)
 
     def __str__(self):
         return self.contentTitle
+

@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.views import generic
 
 
-from .models import content
+from .models import chapterDetail
 
 # Create your views here.
 
@@ -17,19 +17,12 @@ def chapter(request):
 
 
 class IndexView(generic.ListView):
-    model = content
-    template_name = 'aggregator/index2.html'
+    model = chapterDetail
+    template_name = 'aggregator/textbook.html'
 
-    # def post(self, request, *args, **kwargs):
-    #     gradeRequest = request.POST.get('grade')
-    #     subjectRequest = request.POST.get('subject')
-    #     return HttpResponse(gradeRequest + ' ' + subjectRequest)
-
-        #return HttpResponse(grade + ' ' + subject)
-        #return render(request, self.template_name, {'gradeRequest': gradeRequest, 'subjectRequest': subjectRequest})
 
     def get_queryset(self):
-        queryset = content.objects.all()
+        queryset = chapterDetail.objects.all()
 
         if self.request.GET.get('grade'):
             queryset = queryset.filter(grade=self.request.GET.get('grade'))
